@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
