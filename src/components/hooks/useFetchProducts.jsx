@@ -8,7 +8,6 @@ const useFetchProducts = () => {
         try {
           const response = await fetch("https://dummyjson.com/products/category/beauty");
           const data = await response.json();
-          // Filter products to only include those in the beauty category
          
           setProducts(data.products);
         } catch (error) {

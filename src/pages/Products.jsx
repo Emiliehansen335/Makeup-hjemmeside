@@ -13,26 +13,6 @@ const Products = () => {
 
   console.log(products);
 
-  // const fetchProducts = async () => {
-  //   try {
-  //     const response = await fetch(
-  //       "https://dummyjson.com/products/category/beauty"
-  //     );
-  //     const data = await response.json();
-  //     setProducts(data.products);
-  //   } catch (error) {
-  //     setError(error.message);
-  //     console.error(error);
-  //   }
-  // };
-
-  // let nailpolish = products.filter((d) => d.tags.includes("nail polish"));
-  // let lipstick = products.filter((d) => d.tags.includes("lipstick"));
-
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, []);
-
   const [filtered, setFiltered] = useState([...nailpolish, ...lipstick]);
   const [activeFilter, setActiveFilter] = useState("All");
 

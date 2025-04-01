@@ -53,10 +53,8 @@ const Newsletter = () => {
           <label>Enter name:</label>
           <input
             type="name"
-            value={inputValue}
-            onChange={handleInputChange}
             required
-            ref={inputRef}
+
           />
           <label>Enter e-mail:</label>
           <input

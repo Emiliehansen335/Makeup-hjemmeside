@@ -24,17 +24,17 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className={styles.container}>
-      <Link to={`/products/${product.id}`}>
-        <figure className={styles.productCard}>
+      <figure className={styles.productCard}>
+        <Link to={`/products/${product.id}`}>
           <img src={product?.thumbnail} alt={product?.name} />
-          <h3>{product?.title}</h3>
-          {isFavorite ? (
-            <FcDislike size={30} onClick={handleLike} />
-          ) : (
-            <FcLike size={30} onClick={handleLike} />
-          )}
-        </figure>
-      </Link>
+        </Link>
+        <h3>{product?.title}</h3>
+        {isFavorite ? (
+          <FcDislike size={30} onClick={handleLike} />
+        ) : (
+          <FcLike size={30} onClick={handleLike} />
+        )}
+      </figure>
     </div>
   );
 };
